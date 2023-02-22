@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <Style>
+        .Popup {
+            position: absolute;
+            left: 40vw;
+            bottom: 10vh;
+            border: 1px solid black;
+            padding: 2rem;
+            /*min-width: 10rem;*/
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button {
+
+        }
+        
+    </Style>
+</head>
+
+<body>
+    <div class="Popup">
+        <h1>
+            Trevlig dag
+        </h1>
+
+        <p>
+            Hoppas du har en trevlig dag. Ha en bra tid på vår sida< </p>
+                <p>Ha en bra tid på vår sida</p>
+
+                <Button id="accept">Ja</Button>
+                <button id="decline">Nej</button>
+    </div>
+    <main>
+    </main>
+
+    <Script>
+        const div = document.querySelector("div");
+        const accept = document.querySelector('#accept');
+        accept.addEventListener('click', (e) => {
+            console.log('accept');
+            div.classList.add('hidden');
+        })
+        const Decline = document.querySelector('#decline');
+        Decline.addEventListener('click', (e) => {
+            console.log('Decline');
+            const div = document.querySelector("div");
+            div.classList.add('hidden');
+        })
+    </Script>
+
+</body>
+
+</html>
